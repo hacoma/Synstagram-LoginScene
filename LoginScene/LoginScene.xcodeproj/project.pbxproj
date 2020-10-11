@@ -27,11 +27,10 @@
 		C82F568F2533294100A308B1 /* LoginModelErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82F568C2533294100A308B1 /* LoginModelErrorMapper.swift */; };
 		C82F56902533294100A308B1 /* LoginModelDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82F568D2533294100A308B1 /* LoginModelDTOMapper.swift */; };
 		C82F56952533296600A308B1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82F56942533296600A308B1 /* LoginRouter.swift */; };
-		C837659A25335CCE006C6665 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837659925335CCE006C6665 /* DIContainer.swift */; };
-		C837659E25335D61006C6665 /* RoutingDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837659D25335D61006C6665 /* RoutingDependency.swift */; };
-		C83765AA253360BF006C6665 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83765A9253360BF006C6665 /* Dependencies.swift */; };
-		C83765AF2533619D006C6665 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83765AE2533619D006C6665 /* Module.swift */; };
 		C84F37322533248F00FD9C47 /* LoginScene.h in Headers */ = {isa = PBXBuildFile; fileRef = C84F37302533248F00FD9C47 /* LoginScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D5FFA32533C6F900BDE20C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D5FFA02533C6F900BDE20C /* Dependencies.swift */; };
+		C8D5FFA42533C6F900BDE20C /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D5FFA12533C6F900BDE20C /* Module.swift */; };
+		C8D5FFA52533C6F900BDE20C /* RoutingDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D5FFA22533C6F900BDE20C /* RoutingDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,13 +55,12 @@
 		C82F568C2533294100A308B1 /* LoginModelErrorMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModelErrorMapper.swift; sourceTree = "<group>"; };
 		C82F568D2533294100A308B1 /* LoginModelDTOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModelDTOMapper.swift; sourceTree = "<group>"; };
 		C82F56942533296600A308B1 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		C837659925335CCE006C6665 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		C837659D25335D61006C6665 /* RoutingDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingDependency.swift; sourceTree = "<group>"; };
-		C83765A9253360BF006C6665 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
-		C83765AE2533619D006C6665 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		C84F372D2533248F00FD9C47 /* LoginScene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginScene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F37302533248F00FD9C47 /* LoginScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginScene.h; sourceTree = "<group>"; };
 		C84F37312533248F00FD9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D5FFA02533C6F900BDE20C /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		C8D5FFA12533C6F900BDE20C /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		C8D5FFA22533C6F900BDE20C /* RoutingDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingDependency.swift; sourceTree = "<group>"; };
 		CF6DDD8384283B9809D00AEF /* Pods_LoginScene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,17 +154,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		C837659725335CB8006C6665 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				C83765AE2533619D006C6665 /* Module.swift */,
-				C837659925335CCE006C6665 /* DIContainer.swift */,
-				C83765A9253360BF006C6665 /* Dependencies.swift */,
-				C837659D25335D61006C6665 /* RoutingDependency.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
 		C84F37212533245500FD9C47 = {
 			isa = PBXGroup;
 			children = (
@@ -212,9 +199,19 @@
 				C82F56792533290700A308B1 /* Presenter */,
 				C82F567E2533292300A308B1 /* Model */,
 				C82F56932533295400A308B1 /* Router */,
-				C837659725335CB8006C6665 /* DI */,
+				C8D5FF9F2533C6C100BDE20C /* Dependency */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		C8D5FF9F2533C6C100BDE20C /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				C8D5FFA12533C6F900BDE20C /* Module.swift */,
+				C8D5FFA02533C6F900BDE20C /* Dependencies.swift */,
+				C8D5FFA22533C6F900BDE20C /* RoutingDependency.swift */,
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,17 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C837659A25335CCE006C6665 /* DIContainer.swift in Sources */,
+				C8D5FFA32533C6F900BDE20C /* Dependencies.swift in Sources */,
 				C82F56652533284E00A308B1 /* LoginViewController.swift in Sources */,
-				C83765AF2533619D006C6665 /* Module.swift in Sources */,
 				C82F56692533284E00A308B1 /* PasswordView.swift in Sources */,
-				C837659E25335D61006C6665 /* RoutingDependency.swift in Sources */,
-				C83765AA253360BF006C6665 /* Dependencies.swift in Sources */,
 				C82F56902533294100A308B1 /* LoginModelDTOMapper.swift in Sources */,
 				C82F5675253328E200A308B1 /* LoginInteractor.swift in Sources */,
 				C82F567B2533291800A308B1 /* LoginPresenter.swift in Sources */,
 				C82F56682533284E00A308B1 /* UsernameView.swift in Sources */,
 				C82F568E2533294100A308B1 /* LoginModel.swift in Sources */,
+				C8D5FFA42533C6F900BDE20C /* Module.swift in Sources */,
+				C8D5FFA52533C6F900BDE20C /* RoutingDependency.swift in Sources */,
 				C82F56642533284E00A308B1 /* ContentView.swift in Sources */,
 				C82F56662533284E00A308B1 /* TextFieldDataSource.swift in Sources */,
 				C82F56672533284E00A308B1 /* UIHelper.swift in Sources */,

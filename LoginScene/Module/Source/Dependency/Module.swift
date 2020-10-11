@@ -5,6 +5,8 @@
 //  Created by hacoma on 2020/10/12.
 //
 
+import UIKit
+
 public final class Module {
     
     private let dependencies: Dependencies
