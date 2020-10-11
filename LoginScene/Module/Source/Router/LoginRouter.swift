@@ -20,9 +20,11 @@ final class LoginRouter: NSObject, LoginRoutingLogic {
     
     weak var viewController: LoginViewController?
     
-    public static var routeToAlbumList: ((String) -> Void)?
+    private var routingDependency: RoutingDependency? {
+        return viewController?.dependencies?.routingDependency
+    }
     
     func routeToAlbumList(username: String) {
-        LoginRouter.routeToAlbumList?(username)
+        routingDependency?.routeToAlbumList(username: username)
     }
 }
