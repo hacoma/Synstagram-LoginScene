@@ -15,15 +15,9 @@ public final class Module {
         self.dependencies = dependencies
     }
     
-    public func load(to window: inout UIWindow?) {
+    public var controller: UIViewController {
         let vc = LoginViewController(nibName: LoginViewController.className, bundle: LoginViewController.bundle)
         vc.dependencies = dependencies
-        window?.rootViewController = vc
-    }
-    
-    public func load(to navigationController: UINavigationController) {
-        let vc = LoginViewController(nibName: LoginViewController.className, bundle: LoginViewController.bundle)
-        vc.dependencies = dependencies
-        navigationController.pushViewController(vc, animated: true)
+        return vc
     }
 }

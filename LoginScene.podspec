@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LoginScene'
-  s.version = '1.0.3'
+  s.version = '1.0.4'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/hacoma/Synstagram-LoginScene'
   s.authors = { 'hacoma' => 'hacoma92@gmail.com' }
