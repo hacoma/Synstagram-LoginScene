@@ -16,7 +16,7 @@ def hacomaUI
 end
 
 def apiService
-    pod 'APIService/Auth', '1.0.3'
+    pod 'APIService/Auth', '1.0.5'
 end
 
 target :'LoginScene' do

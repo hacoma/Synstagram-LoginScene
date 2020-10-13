@@ -16,8 +16,10 @@ final class LoginWorker {
     
     typealias Completion = (Result<LoginModel.Response.Entity, LoginModel.Response.Error>) -> Void
     
+    private let authService = AuthService()
+    
     func requestIsAlreadyLogin(completion: @escaping Completion) {
-        AuthService.requestIsAlreadyLogin { [weak self] result in
+        authService.requestIsAlreadyLogin { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let dto):
@@ -31,7 +33,7 @@ final class LoginWorker {
     }
     
     func requestLogin(request: LoginModel.Request, completion: @escaping Completion) {
-        AuthService.requestLogin(request: request.toAuthService) { [weak self] result in
+        authService.requestLogin(request: request.toAuthService) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let dto):
