@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.2.2)
-  - APIService/Auth (1.0.2):
+  - APIService/Auth (1.0.3):
     - HacomaExtensions (= 1.0.2)
     - HacomaNetwork (= 1.0.2)
   - HacomaExtensions (1.0.2)
@@ -13,7 +13,7 @@ PODS:
     - Alamofire (~> 5.0)
 
 DEPENDENCIES:
-  - APIService/Auth (= 1.0.2)
+  - APIService/Auth (= 1.0.3)
   - HacomaExtensions (= 1.0.2)
   - HacomaUI/InsetTextField (= 1.0.2)
 
@@ -30,12 +30,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  APIService: a3f7c15252fa09120df4bf1a0b82435163df8aff
+  APIService: d5209ccdd8a07605a53677725808d23d64c9e007
   HacomaExtensions: 0d243cb247f4046ce014e040938813f36d832a8c
   HacomaNetwork: efa22825d5ab84804b9fe66d19ec7f608e1166c3
   HacomaUI: ebcdef08bb7112c3a37b9c219524707787324b8a
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: ad5ede5ccb7829b2593bbc7cca46042f7e420550
+PODFILE CHECKSUM: 2f3f6977f7a2556b0b5085b4a8796b2c1cb25154
 
 COCOAPODS: 1.9.3

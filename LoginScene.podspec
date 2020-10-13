@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LoginScene'
-  s.version = '1.0.4'
+  s.version = '1.0.5'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/hacoma/Synstagram-LoginScene'
   s.authors = { 'hacoma' => 'hacoma92@gmail.com' }
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'HacomaExtensions', '1.0.2'
   s.dependency 'HacomaUI/InsetTextField', '1.0.2'
-  s.dependency 'APIService/Auth', '1.0.2'
+  s.dependency 'APIService/Auth', '1.0.3'
 end

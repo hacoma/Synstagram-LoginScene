@@ -33,19 +33,22 @@ class PasswordView: UIView, TextFieldDataSource {
         loadFromNib()
         configureView()
     }
+}
+
+extension PasswordView {
     
     private func configureView() {
         configureTextField()
     }
-}
-
-extension PasswordView {
     
     private func configureTextField() {
         configureTextFieldPlaceHolder()
         configureTextFieldRightView()
         configureTextFieldAction()
     }
+}
+
+extension PasswordView {
     
     private func configureTextFieldPlaceHolder() {
         textField.attributedPlaceholder = NSMutableAttributedString(string: "비밀번호")

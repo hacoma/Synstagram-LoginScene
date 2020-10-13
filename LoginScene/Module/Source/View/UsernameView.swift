@@ -33,19 +33,22 @@ class UsernameView: UIView, TextFieldDataSource {
         loadFromNib()
         configureView()
     }
+}
+
+extension UsernameView {
     
     private func configureView() {
         configureTextField()
     }
-}
-
-extension UsernameView {
     
     private func configureTextField() {
         configureTextFieldPlaceHolder()
         configureTextFieldRightView()
         configureTextFieldAction()
     }
+}
+
+extension UsernameView {
     
     private func configureTextFieldPlaceHolder() {
         textField.attributedPlaceholder = NSMutableAttributedString(string: "전화번호, 사용자 이름 또는 이메일")

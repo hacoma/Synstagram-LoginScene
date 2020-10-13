@@ -37,12 +37,6 @@ class ContentView: UIView {
         addKeyboardObserver()
     }
     
-    private func configureView() {
-        configureUsernameView()
-        configurePasswordView()
-        configureLoginButton()
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         endEditing(true)
     }
@@ -53,6 +47,12 @@ class ContentView: UIView {
 }
 
 extension ContentView {
+    
+    private func configureView() {
+        configureUsernameView()
+        configurePasswordView()
+        configureLoginButton()
+    }
     
     private func configureUsernameView() {
         usernameView.textDidChange = { [weak self] in
@@ -69,13 +69,6 @@ extension ContentView {
     private func configureLoginButton() {
         loginButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         loginButton.setTitleColor(#colorLiteral(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1), for: .disabled)
-    }
-}
-
-extension ContentView {
-    
-    private func updateLayout() {
-        // TODO: update autolayout constraint for screen size
     }
 }
 
@@ -102,10 +95,10 @@ extension ContentView {
             let password = passwordView.text
         else { return }
         
+        loginButton.isEnabled = false
+        
         let request = LoginModel.Request(username: username, password: password, isRemember: rememberSwitch.isOn)
         interactor?.requestLogin(request: request)
-        
-        loginButton.isEnabled = false
     }
 }
 
@@ -126,6 +119,9 @@ extension ContentView {
     private func removeKeyboardObserver() {
         NotificationCenter.default.removeObserver(self)
     }
+}
+
+extension ContentView {
     
     @objc private func keyboardWillShow() {
         // TODO: update autolayout constraint for keyboard will show
@@ -133,5 +129,12 @@ extension ContentView {
     
     @objc private func keyboardWillHide(){
         // TODO: update autolayout constraint for keyboard will hide
+    }
+}
+
+extension ContentView {
+    
+    private func updateLayout() {
+        // TODO: update autolayout constraint for screen size
     }
 }
