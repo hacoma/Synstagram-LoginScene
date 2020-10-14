@@ -3,10 +3,13 @@ PODS:
   - APIService/Auth (1.0.5):
     - HacomaExtensions (= 1.0.2)
     - HacomaNetwork (= 1.0.4)
+  - HacomaDIContainer (1.0.3)
   - HacomaExtensions (1.0.2)
   - HacomaNetwork (1.0.4):
     - Moya (= 14.0.0)
   - HacomaUI/InsetTextField (1.0.2)
+  - Injectable/AlbumList (1.0.0)
+  - Injectable/Login (1.0.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -14,28 +17,35 @@ PODS:
 
 DEPENDENCIES:
   - APIService/Auth (= 1.0.5)
+  - HacomaDIContainer (= 1.0.3)
   - HacomaExtensions (= 1.0.2)
   - HacomaUI/InsetTextField (= 1.0.2)
+  - Injectable/AlbumList (= 1.0.0)
+  - Injectable/Login (= 1.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Moya
   https://github.com/hacoma/iOS-Hacoma-Module-CocoaPods-Specs.git:
+    - HacomaDIContainer
     - HacomaExtensions
     - HacomaNetwork
     - HacomaUI
   https://github.com/hacoma/Synstagram-Module-CocoaPods-Specs.git:
     - APIService
+    - Injectable
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   APIService: 115f9ac1ba41c63be2d76acaa6c3433867701b49
-  HacomaExtensions: 0d243cb247f4046ce014e040938813f36d832a8c
-  HacomaNetwork: b0e8702469cbec1d26c0b30993084e40a0eaf754
-  HacomaUI: ebcdef08bb7112c3a37b9c219524707787324b8a
+  HacomaDIContainer: 2bef284eee9e8331d36444e53e50b607da9ee598
+  HacomaExtensions: 8949a6585d781d4e59a751d04a625b4036864c4d
+  HacomaNetwork: 8d748e826fba5ff43e212445ef0174ee29d27c18
+  HacomaUI: d67f1216b581a6ace8a1ce1e69785fed2511ea6f
+  Injectable: 4bfdaa3128e5021ac0a1076dcd99c88ef02c7768
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: 654f5bd434e693cbee62e982217a54372c187f56
+PODFILE CHECKSUM: f7fc9631e20616b2e771dff5b1946e6db8ce7209
 
 COCOAPODS: 1.9.3
