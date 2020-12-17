@@ -8,7 +8,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 def hacomaDIConatiner
-    pod 'HacomaDIContainer', '1.0.3'
+    pod 'HacomaDIContainer', '1.0.4'
 end
 
 def hacomaExtensions
@@ -23,9 +23,9 @@ def apiService
     pod 'APIService/Auth', '1.0.5'
 end
 
-def injectable
-    pod 'Injectable/Login', '1.0.0'
-    pod 'Injectable/AlbumList', '1.0.0'
+def dependency
+    pod 'Dependencies/Login', '1.0.2'
+    pod 'Dependencies/AlbumList', '1.0.2'
 end
 
 target :'LoginScene' do
@@ -33,5 +33,5 @@ target :'LoginScene' do
     hacomaExtensions
     hacomaUI
     apiService
-    injectable
+    dependency
 end

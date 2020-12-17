@@ -82,7 +82,7 @@ extension PasswordView {
     }
     
     private func configureTextFieldAction() {
-        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
 }
 
@@ -93,7 +93,7 @@ extension PasswordView {
         textField.isSecureTextEntry = !button.isSelected
     }
     
-    @objc private func textFieldDidChange(_ textField: UITextField) {
+    @objc private func textFieldDidChange() {
         textDidChange?()
     }
 }

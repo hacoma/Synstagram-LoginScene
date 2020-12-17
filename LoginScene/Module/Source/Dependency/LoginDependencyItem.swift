@@ -1,15 +1,15 @@
 //
-//  LoginInjectItem.swift
+//  LoginDependencyItem.swift
 //  LoginScene
 //
 //  Created by hacoma on 2020/10/14.
 //
 
 import Foundation
+import Dependencies
 import HacomaDIContainer
-import Injectable
 
-public struct LoginInjectItem: Dependency, LoginInjectable {
+public struct LoginDependencyItem: Dependency, LoginDependency {
     
     public init() {
         // available outside of the framework

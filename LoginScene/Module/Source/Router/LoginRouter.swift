@@ -10,8 +10,8 @@
 //
 
 import UIKit
+import Dependencies
 import HacomaDIContainer
-import Injectable
 
 protocol LoginRoutingLogic {
     
@@ -22,11 +22,11 @@ final class LoginRouter: NSObject, LoginRoutingLogic {
     
     weak var viewController: LoginViewController?
     
-    @Injected
-    private var albumListInjectable: AlbumListInjectable?
+    @Injectable
+    private var albumListDependency: AlbumListDependency?
     
     func routeToAlbumList(username: String) {
-        let albumListVC = albumListInjectable?.getViewController(username: username)
+        let albumListVC = albumListDependency?.getViewController(username: username)
         albumListVC?.view.backgroundColor = .red
         
         let keyWindow = UIApplication.shared.windows.first { $0.isKeyWindow }

@@ -79,7 +79,7 @@ extension UsernameView {
     }
     
     private func configureTextFieldAction() {
-        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
 }
 
@@ -87,10 +87,10 @@ extension UsernameView {
     
     @objc private func touchedDeleteButton(_ button: UIButton) {
         textField.text = ""
-        textFieldDidChange(textField)
+        textFieldDidChange()
     }
     
-    @objc private func textFieldDidChange(_ textField: UITextField) {
+    @objc private func textFieldDidChange() {
         textDidChange?()
     }
 }
